@@ -180,14 +180,38 @@
         </div>
     </section>
     <script>
-        function toggleMenu() {
-            console.log("clicked");
+        const menuIcon = document.querySelector('.menu-icon i');
             const nav = document.getElementById("navMenu");
-            nav.classList.toggle("show");
-            const menuIcon = document.querySelector(".menu-icon i");
-            menuIcon.classList.toggle("fa-bars"); // الخطوط العادية
-            menuIcon.classList.toggle("fa-xmark"); // علامة إكس (×)
-        }
+
+            document.querySelector('.menu-icon').addEventListener('click', () => {
+                nav.classList.toggle('show');
+                if (menuIcon.classList.contains('fa-bars')) {
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-xmark'); // كروس
+                } else {
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars'); // ثلاث شرط
+                }
+            });
+
+            // باقي الكود مثل ما هو، بس تعال نعدل شوية
+            document.querySelectorAll('#navMenu ul li a').forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('show');
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                const menuContainer = document.querySelector('.menu-icon');
+                if (!nav.contains(e.target) && !menuContainer.contains(e.target)) {
+                    nav.classList.remove('show');
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                }
+            });
+
     </script>
     
 </body>
