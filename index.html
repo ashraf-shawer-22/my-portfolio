@@ -1,242 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>Ashraf Shawer — Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Ashraf Shawer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="name">Ashraf Shawer</div>
-            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
-            <div class="nav" id="navMenu">
-                <ul>
-                    <li><a href="#overview" class="">home</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#about">about me</a></li>
-                    <li><a href="#contact">contact me</a></li>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+    <nav>
+        <div class="main-container">
+            <div class="nav-inner">
+                <div class="nav-logo">Ashraf.dev</div>
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="nav-cta"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire
+                    Me</button>
             </div>
         </div>
-    </div>
-    <div class="overview" id="overview">
-        <div class="container">
-            <div class="info">
-                <h2>👋Hey there  I'm Ashraf Shawer</h2>
-                <p>A passionate Frontend Developer with a strong interest in building modern, responsive, and user-friendly websites.
-                I enjoy combining design and code to create clean and interactive user experiences.</p>
-                <a href="My_CV.pdf" download class="download-btn">Download CV<i class="fa-solid fa-download"></i></a>
-            </div>
-            <div class="image">
-                <img src="images/myphoto2.jpg" alt="">
-            </div>
-        </div>
-        <a href="#projects" class="arrow">
-            <i class="fas fa-angle-double-down fa-2x"></i>
-        </a>
-    </div>
-    <div class="projects" id="projects">
-        <div class="container">
-            <h1>my projects</h1>
-            <div class="project-con">
-                <div class="box">
-                    <h2>Bookly App</h2>
-                    <div class="links">
-                        <a href="https://github.com/ashraf-shawer-22/bookly-app"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://bookly-app-three.vercel.app/"><i class="fa-solid fa-globe"></i></a>
+    </nav>
+    <div class="main-container">
+        <!-- ===================== HERO ===================== -->
+        <div class="wrap">
+            <section class="hero">
+                <div>
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Open to opportunities
                     </div>
-                    <img src="images/bookly-app.png" alt="">
-                </div>
-                <div class="box">
-                    <h2>E-commerce shop</h2>
-                    <div class="links">
-                        <a href="https://github.com/ashraf-shawer-22/e-commerce-shop"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://e-commerce-shop-beta.vercel.app/"><i class="fa-solid fa-globe"></i></a>
-                    </div>
-                    <img src="images/e-commerce-shop.png" alt="">
-                </div>
-                <div class="box">
-                    <h2>to do list</h2>
-                    <div class="links">
-                        <a href="https://github.com/ashraf-shawer-22/to-do-list"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://dolistproject.netlify.app/"><i class="fa-solid fa-globe"></i></a>
-                    </div>
-                    <img src="images/to-do-list.png" alt="">
-                </div>
-                <div class="box">
-                    <h2>watches store</h2>
-                    <div class="links">
-                        <a href="https://github.com/ashraf-shawer-22/watch-store"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://golden-time-store.netlify.app/"><i class="fa-solid fa-globe"></i></a>
-                    </div>
-                    <img src="images/watch_store.png" alt="">
-                </div>
-                <div class="box">
-                    <h2>elzero template3</h2>
-                    <div class="links">
-                        <a href="https://github.com/ashraf-shawer-22/template-three"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://template-three-elzero.netlify.app/"><i class="fa-solid fa-globe"></i></a>
-                    </div>
-                    <img src="images/template3.png" alt="">
-                </div>
-                <div class="box">
-                    <h2>kasper Website</h2>
-                    <div class="links">
-                        <a href="https://github.com/ashraf-shawer-22/template-two"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://template-two-elzeroo.netlify.app/"><i class="fa-solid fa-globe"></i></a>
-                    </div>
-                    <img src="images/kasper_project.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="skills" id="skills">
-        <div class="container">
-            <h1>technical skills</h1>
-            <div class="skill-con">
-                <div class="card">
-                    <img src="images/html.png" alt="">
-                    <h3>html5</h3>
-                </div>
-                <div class="card">
-                    <img src="images/css.jpeg" alt="">
-                    <h3>css3</h3>
-                </div>
-                <div class="card">
-                    <img src="images/javascript-logo-javascript-icon-transparent-free-png.webp" alt="">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="card">
-                    <img src="images/bootstrab.jpeg" alt="">
-                    <h3>bootstrab</h3>
-                </div>
-                <div class="card">
-                    <img src="images/react.png" alt="">
-                    <h3>React</h3>
-                </div>
-                <div class="card">
-                    <img src="images/typescript-icon.png" alt="">
-                    <h3>Typescript</h3>
-                </div>
-                <div class="card">
-                    <img src="images/c++.png" alt="">
-                    <h3>c++</h3>
-                </div>
-                <div class="card">
-                    <img src="images/python.png" alt="">
-                    <h3>python</h3>
-                </div>
-                <div class="card">
-                    <img src="images/responsive.png" alt="" style="height: 100px; width: 200px;">
-                    <h3>responsive design</h3>
-                </div>
-                <div class="card">
-                    <img src="images/figma.jpeg" alt="">
-                    <h3>figma</h3>
-                </div>
-                <div class="card">
-                    <img src="images/git.png" alt="">
-                    <h3>git</h3>
-                </div>
-                <div class="card">
-                    <img src="images/github.png" alt="">
-                    <h3>github</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="about" id="about">
-        <div class="container">
-            <div class="info">
-                <h2>About Me</h2>
-                <p>
-                    I’m a computer science student at Faculty of Artificial Intelligence – Sadat University. I specialize in
-                    front-end
-                    development, and I’m currently focused on building clean and modern UIs using HTML, CSS, JavaScript, and Bootstrap.
-                    I
-                    also have interest in UI/UX design and working with APIs. Always learning and building new stuff!
-                </p>
-                <div class="why-me">
-                    <span> 🚀 Quick responding</span>
-                    <span>⚡ Fast Delivery</span>
-                    <span> 🎯 Attention to Detail</span>
-                    <span> 💬 Effective Communication</span>
-                    <span> 🎨 Creative UI/UX</span>
-                    <span> 🔧 Problem Solver</span>
-                </div>
-            </div>
-            <div class="image">
-                <img src="images/aboutme.jpg" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- Contact Me Section -->
-    <section class="contact-me" id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out through any platform below 👇</p>
-            <div class="contact-links">
-                <a href="https://wa.me/201020215143?text=Hi%20Ashraf,%2C%20I%20need%20a%20service%20and%20would%20love%20to%20connect!"
-                    target="_blank">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-                <a href="https://www.linkedin.com/in/ashraf-shawer-744589307" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/ashraf-shawer-22" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://m.me/ash.raf.769142" target="_blank">
-                    <i class="fab fa-facebook"></i> Facebook
-                </a>
-                <a href="mailto:ashrafshawer22s27@gmail.com">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-            </div>
-        </div>
-    </section>
-    <script>
-        const menuIcon = document.querySelector('.menu-icon i');
-            const nav = document.getElementById("navMenu");
 
-            document.querySelector('.menu-icon').addEventListener('click', () => {
-                nav.classList.toggle('show');
-                if (menuIcon.classList.contains('fa-bars')) {
-                    menuIcon.classList.remove('fa-bars');
-                    menuIcon.classList.add('fa-xmark'); // كروس
-                } else {
-                    menuIcon.classList.remove('fa-xmark');
-                    menuIcon.classList.add('fa-bars'); // ثلاث شرط
-                }
-            });
+                    <h1>
+                        <span class="hi">Hey there, I'm</span>
+                        <span class="name">Ashraf Shawer</span>
+                        <span class="role">Frontend Developer</span>
+                    </h1>
 
-            // باقي الكود مثل ما هو، بس تعال نعدل شوية
-            document.querySelectorAll('#navMenu ul li a').forEach(link => {
-                link.addEventListener('click', () => {
-                    nav.classList.remove('show');
-                    menuIcon.classList.remove('fa-xmark');
-                    menuIcon.classList.add('fa-bars');
+                    <p class="hero-sub">
+                        Building <b>modern, responsive</b> web experiences that combine
+                        great design with clean code. Passionate about <b>React, TypeScript</b>
+                        &amp; user-first interfaces.
+                    </p>
+
+                    <div class="hero-btns">
+                        <a href="Ashraf_Shawer_CV.pdf" target="_blank" class="btn-grad">Download
+                            CV</a>
+                        <button class="btn-ghost"
+                            onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View
+                            Projects
+                            →</button>
+                    </div>
+
+                    <div class="hero-links">
+                        <a href="https://github.com/ashraf-shawer-22" target="_blank"
+                            class="hero-link flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ashraf-shawer-744589307" target="_blank"
+                            class="hero-link flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashrafshawer22s27@gmail.com"
+                            target="_blank" class="hero-link flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <path d="M22 7L12 13 2 7"></path>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- my photo -->
+                <div class="avatar-box">
+                    <div class="avatar-ring">
+                        <div class="avatar-inner">
+                            <img src="IMG-20250617-WA0082.jpg" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <!-- STATS -->
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-n">5+</div>
+                <div class="stat-l">Projects</div>
+            </div>
+            <div class="stat">
+                <div class="stat-n">19+</div>
+                <div class="stat-l">Skills</div>
+            </div>
+            <div class="stat">
+                <div class="stat-n">CS</div>
+                <div class="stat-l">Sadat University</div>
+            </div>
+        </div>
+        <!-- ===================== PROJECTS ===================== -->
+        <section id="projects" class="projects-section">
+            <div class="sec-header">
+                <div class="sec-label">// selected work</div>
+                <div class="sec-title">My Projects</div>
+            </div>
+            <div class="projects-grid">
+
+                <a class="proj-card big" href="https://bookly-app-three.vercel.app/" target="_blank">
+                    <div class="proj-arrow">↗</div>
+                    <div class="proj-img" style="background:linear-gradient(135deg,#1e1b4b,#312e81)">
+                        <span>📱</span>
+                        <div class="proj-overlay"></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-year">2024</div>
+                        <div class="proj-name">Bookly App</div>
+                        <div class="proj-desc">A clean and modern book browsing application with search, filtering, and
+                            a beautiful reading UI.</div>
+                        <div class="proj-stack">
+                            <span class="stack-tag">React</span>
+                            <span class="stack-tag">JavaScript</span>
+                            <span class="stack-tag">CSS3</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="proj-card" href="https://e-commerce-shop-beta.vercel.app/" target="_blank">
+                    <div class="proj-arrow">↗</div>
+                    <div class="proj-img" style="background:linear-gradient(135deg,#064e3b,#065f46)">
+                        <span>🛒</span>
+                        <div class="proj-overlay"></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-year">2024</div>
+                        <div class="proj-name">E-commerce Shop</div>
+                        <div class="proj-desc">Full-featured online store with cart, product listing, and responsive
+                            layout.</div>
+                        <div class="proj-stack">
+                            <span class="stack-tag">React</span>
+                            <span class="stack-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="proj-card" href="https://golden-time-store.netlify.app/" target="_blank">
+                    <div class="proj-arrow">↗</div>
+                    <div class="proj-img" style="background:linear-gradient(135deg,#1c1917,#292524)">
+                        <span>⌚</span>
+                        <div class="proj-overlay"></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-year">2024</div>
+                        <div class="proj-name">Watches Store</div>
+                        <div class="proj-desc">Luxury watch store landing page with elegant design and smooth UX.</div>
+                        <div class="proj-stack">
+                            <span class="stack-tag">HTML5</span>
+                            <span class="stack-tag">CSS3</span>
+                            <span class="stack-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="proj-card" href="https://dolistproject.netlify.app/" target="_blank">
+                    <div class="proj-arrow">↗</div>
+                    <div class="proj-img" style="background:linear-gradient(135deg,#1e3a5f,#1e40af)">
+                        <span>✅</span>
+                        <div class="proj-overlay"></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-year">2023</div>
+                        <div class="proj-name">To-Do List</div>
+                        <div class="proj-desc">Clean task manager with add, delete, and complete task functionality.
+                        </div>
+                        <div class="proj-stack">
+                            <span class="stack-tag">JavaScript</span>
+                            <span class="stack-tag">LocalStorage</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="proj-card" href="https://template-three-elzero.netlify.app/" target="_blank">
+                    <div class="proj-arrow">↗</div>
+                    <div class="proj-img" style="background:linear-gradient(135deg,#7c2d12,#9a3412)">
+                        <span>🌐</span>
+                        <div class="proj-overlay"></div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-year">2023</div>
+                        <div class="proj-name">Elzero Template 3</div>
+                        <div class="proj-desc">Multi-section website template with modern design and responsive grid
+                            layout.</div>
+                        <div class="proj-stack">
+                            <span class="stack-tag">HTML5</span>
+                            <span class="stack-tag">CSS3</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- ===================== SKILLS ===================== -->
+        <section id="skills" class="skills-section">
+            <div class="sec-header">
+                <div class="sec-label">// technical stack</div>
+                <div class="sec-title">Skills</div>
+            </div>
+            <!-- FILTER TABS -->
+            <div class="skills-tabs">
+                <button class="stab active" onclick="filterSkills('all', this)">All</button>
+                <button class="stab" onclick="filterSkills('frontend', this)">Frontend</button>
+                <button class="stab" onclick="filterSkills('tools', this)">Tools &amp; Design</button>
+                <button class="stab" onclick="filterSkills('languages', this)">Languages</button>
+                <button class="stab" onclick="filterSkills('soft', this)">Soft Skills</button>
+            </div>
+            <!-- FRONTEND SKILLS -->
+            <div class="skills-category cat-frontend" data-cat="frontend">
+                <div class="cat-header">
+                    <div class="cat-icon">⚛️</div>
+                    <div class="cat-title">Frontend Development</div>
+                    <div class="cat-count">7 skills</div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-name">HTML5</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-name">CSS3</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">⚡</div>
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">⚛️</div>
+                        <div class="skill-name">React</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🔷</div>
+                        <div class="skill-name">TypeScript</div>
+                        <div class="skill-level">Learning</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🅱️</div>
+                        <div class="skill-name">Bootstrap</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-name">Responsive</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-divider"></div>
+            <!-- TOOLS & DESIGN -->
+            <div class="skills-category cat-tools" data-cat="tools">
+                <div class="cat-header">
+                    <div class="cat-icon">🛠️</div>
+                    <div class="cat-title">Tools &amp; Design</div>
+                    <div class="cat-count">4 skills</div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">📐</div>
+                        <div class="skill-name">Figma</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🌿</div>
+                        <div class="skill-name">Git</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🐙</div>
+                        <div class="skill-name">GitHub</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🎭</div>
+                        <div class="skill-name">UI/UX Design</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-divider"></div>
+            <!-- PROGRAMMING LANGUAGES -->
+            <div class="skills-category cat-languages" data-cat="languages">
+                <div class="cat-header">
+                    <div class="cat-icon">💻</div>
+                    <div class="cat-title">Programming Languages</div>
+                    <div class="cat-count">3 skills</div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">🐍</div>
+                        <div class="skill-name">Python</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">➕</div>
+                        <div class="skill-name">C++</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🔌</div>
+                        <div class="skill-name">REST APIs</div>
+                        <div class="skill-level">Learning</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-divider"></div>
+            <!-- SOFT SKILLS -->
+            <div class="skills-category cat-soft" data-cat="soft">
+                <div class="cat-header">
+                    <div class="cat-icon">🤝</div>
+                    <div class="cat-title">Soft Skills</div>
+                    <div class="cat-count">5 skills</div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">🚀</div>
+                        <div class="skill-name">Fast Delivery</div>
+                        <div class="skill-level">Strength</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🎯</div>
+                        <div class="skill-name">Attention to Detail</div>
+                        <div class="skill-level">Strength</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">💬</div>
+                        <div class="skill-name">Communication</div>
+                        <div class="skill-level">Strength</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🔧</div>
+                        <div class="skill-name">Problem Solving</div>
+                        <div class="skill-level">Strength</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📚</div>
+                        <div class="skill-name">Always Learning</div>
+                        <div class="skill-level">Strength</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function filterSkills(cat, btn) {
+                // update active tab
+                document.querySelectorAll('.stab').forEach(t => t.classList.remove('active'));
+                btn.classList.add('active');
+                // show/hide categories
+                document.querySelectorAll('.skills-category').forEach(el => {
+                    if (cat === 'all' || el.dataset.cat === cat) {
+                        el.classList.remove('hidden');
+                    } else {
+                        el.classList.add('hidden');
+                    }
                 });
-            });
-
-            document.addEventListener('click', (e) => {
-                const menuContainer = document.querySelector('.menu-icon');
-                if (!nav.contains(e.target) && !menuContainer.contains(e.target)) {
-                    nav.classList.remove('show');
-                    menuIcon.classList.remove('fa-xmark');
-                    menuIcon.classList.add('fa-bars');
-                }
-            });
-
-    </script>
-    
+                document.querySelectorAll('.skills-divider').forEach(d => {
+                    d.style.display = cat === 'all' ? '' : 'none';
+                });
+            }
+        </script>
+        <!-- ===================== ABOUT ===================== -->
+        <section id="about">
+            <div class="sec-header">
+                <div class="sec-label">// who am i</div>
+                <div class="sec-title">About Me</div>
+            </div>
+            <div class="about-section">
+                <div class="about-text">
+                    <p>I'm a <b>Computer Science student</b> at the Faculty of Artificial Intelligence, Sadat University
+                        — specializing in <b>front-end development</b>.</p>
+                    <p>I focus on building clean, modern UIs with <b>React, TypeScript &amp; Bootstrap</b>. I'm also
+                        interested in <b>UI/UX design</b> and working with APIs. Always learning, always building.</p>
+                    <div class="traits">
+                        <span class="trait">🚀 Fast Delivery</span>
+                        <span class="trait">🎯 Detail Oriented</span>
+                        <span class="trait">🎨 Creative UI/UX</span>
+                        <span class="trait">🔧 Problem Solver</span>
+                        <span class="trait">💬 Good Communicator</span>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <h3>Education &amp; Focus</h3>
+                    <div class="exp-item">
+                        <div class="exp-title">Faculty of Artificial Intelligence</div>
+                        <div class="exp-sub">Sadat University · Computer Science · 2022 – Present</div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-title">Frontend Development</div>
+                        <div class="exp-sub">HTML · CSS · JavaScript · React · TypeScript</div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-title">Tools &amp; Design</div>
+                        <div class="exp-sub">Figma · Git · GitHub · Responsive Design</div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-title">Other Languages</div>
+                        <div class="exp-sub">Python · C++</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===================== CONTACT ===================== -->
+        <section id="contact" class="contact-section">
+            <h2>Let's Work Together 🤝</h2>
+            <p>Got a project in mind? I'm open to freelance work and collaborations.<br>Feel free to reach out through
+                any platform below.</p>
+            <div class="contact-links">
+                <a href="https://wa.me/201020215143?text=Hi%20Ashraf,%20Let's%20work%20together." target="_blank"
+                    class="contact-btn cb-wa">💬 WhatsApp</a>
+                <a href="https://www.linkedin.com/in/ashraf-shawer-744589307" target="_blank"
+                    class="contact-btn cb-li">💼 LinkedIn</a>
+                <a href="https://github.com/ashraf-shawer-22" target="_blank" class="contact-btn cb-gh">🐙 GitHub</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashrafshawer22s27@gmail.com"
+                    class="contact-btn cb-em">✉️ Email</a>
+                <a href="https://m.me/ash.raf.769142" target="_blank" class="contact-btn cb-fb">📘 Facebook</a>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <span>&copy; <span id="year"></span> <b>Ashraf Shawer</b></span>
+        </footer>
+    </div>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
-</html>
